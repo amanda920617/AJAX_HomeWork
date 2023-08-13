@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Travel";
+}
+
+<h1>Travel</h1>
+
+<div id="AllCard" style="display:flex; flex-direction: row; flex-wrap:wrap">
+</div>
+
+
+@section Scripts{
+    <script src="~/datas/travel.js"></script>
+    <script>
+        console.log(spots)
+
+        const All = document.querySelector('#AllCard')
+
+        for (let i = 0; i < spots.CommonFormat.Section.length; i++) {
+            All.innerHTML +=
+            `<div class="card" style="width: 20rem;">
+                                <img src="" class="card-img-top" alt="" id="photo${i}">
+                                <div class="card-body">
+                                            <h5 class="card-title" id="title${i}">Card title</h5>
+                                            <p class="card-text" id="intro${i}">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary" id="link${i}">前往網站</a>
+                                </div>
+                                    </div>`
+            document.querySelector('#photo' + i).setAttribute('src', `${spots.CommonFormat.Section[i].file.img[0].text}`)
+            document.querySelector('#photo' + i).setAttribute('alt', `${spots.CommonFormat.Section[i].file.img[0].text}`)
+            document.querySelector('#title' + i).textContent = `${spots.CommonFormat.Section[i].stitle}`
+            document.querySelector('#intro' + i).textContent = `${spots.CommonFormat.Section[i].xbody}`
+            document.querySelector('#link' + i).setAttribute('href', `${spots.CommonFormat.Section[i].xurl}`)
+        }
+    </script>
+}
+
+@section Styles{
+
+}

@@ -1,0 +1,101 @@
+﻿@{
+    ViewData["Title"] = "Address";
+}
+
+<h1>Address</h1>
+<select id="selectCity"></select>
+<select id="selectDistrict"></select>
+<select id="selectRoad"></select>
+<div id="div1" class="alert alert-info"> </div>
+
+
+
+@section Styles{
+    <style></style>
+}
+
+@section Scripts{
+    <script>
+        const selCity = document.querySelector('#selectCity');
+        const selDistrict = document.querySelector('#selectDistrict');
+        const selRoad = document.querySelector('#selectRoad');
+        const theDiv = document.querySelector('#div1');
+
+        // function loadCity() {
+        //     const xhr = new XMLHttpRequest();
+        //     xhr.open('GET', '@Url.Content("/api/cities")');
+        //     xhr.send();
+        //     xhr.addEventListener('load', () => {
+        //         const datas = JSON.parse(xhr.responseText)
+        //         const cities = datas.map(city => `<option value='${city}'>${city}</option>`);
+        //         selCity.innerHTML = cities.join("");
+        //         loadDistrict()
+        //     })
+        // }
+        // loadCity()
+
+        // function loadDistrict() {
+        //     const xhr = new XMLHttpRequest();
+        //     xhr.open('GET', `@Url.Content("/api/districts")?city=${selCity.value}`);
+        //     xhr.send();
+        //     xhr.addEventListener('load', () => {
+        //         const datas = JSON.parse(xhr.responseText)
+        //         const districts = datas.map(district => `<option value='${district}'>${district}</option>`);
+        //         selDistrict.innerHTML = districts.join("");
+        //         loadRoad()
+        //     })
+        // }
+        // function loadRoad() {
+        //     const xhr = new XMLHttpRequest();
+        //     xhr.open('GET', `@Url.Content("/api/roads")?siteId=${selDistrict.value}`);
+        //     xhr.send();
+        //     xhr.addEventListener('load', () => {
+        //         const datas = JSON.parse(xhr.responseText)
+        //         const roads = datas.map(road => `<option value='${road}'>${road}</option>`);
+        //         selRoad.innerHTML = roads.join("");
+        //         show()
+        //     })
+        // }
+
+        async function loadCity() {
+            const response = await fetch('@Url.Content("/api/Cities")')
+            const datas = await response.json();
+            const cities = datas.map(city => `<option value='${city}'>${city}</option>`);
+            selCity.innerHTML = cities.join("");
+            loadDistrict()
+        }
+        loadCity()
+
+        async function loadDistrict() {
+            const response = await fetch(`@Url.Content("/api/districts")?city=${selCity.value}`)
+            const datas = await response.json();
+            const districts = datas.map(district => `<option value='${district}'>${district}</option>`);
+            selDistrict.innerHTML = districts.join("");
+            loadRoad()
+        }
+
+        async function loadRoad() {
+            const response = await fetch(`@Url.Content("/api/roads")?siteId=${selDistrict.value}`)
+            const datas = await response.json();
+            const roads = datas.map(road => `<option value='${road}'>${road}</option>`);
+            selRoad.innerHTML = roads.join("");
+            show()
+        }
+
+        selCity.addEventListener('change', () => {
+            loadDistrict()
+        })
+
+        selDistrict.addEventListener('change', () => {
+            loadRoad()
+        })
+        selRoad.addEventListener('change', () => {
+            show()
+        })
+
+        function show() {
+            theDiv.textContent = `${selCity.value} - ${selDistrict.value} - ${selRoad.value}`;
+        }
+
+    </script>
+}

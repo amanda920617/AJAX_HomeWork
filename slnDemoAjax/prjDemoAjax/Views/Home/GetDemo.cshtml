@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "GetDemo";
+}
+
+<h1>GetDemo</h1>
+
+<div class="alert alert-info" id="div1"></div>
+@section Styles{
+    <style>
+    </style>
+
+}
+@section Scripts{
+    <script>
+        //步驟一建立Ajax物件  XMLHttpRequest、fetch()、jQuery、axios.....
+        const xhr = new XMLHttpRequest();
+        //步驟二對伺服器發出要求
+        // xhr.open('GET','/api/index',false);  //false 表示改成同步的執行模式
+        //使用 '/api/index' 是從根目錄的絕對路徑
+        //使用 'api/index' 少了/是相對路徑(從home/api/...)會錯誤
+        //xhr.open('GET', '/api/index');
+        xhr.open('GET', '@Url.Content("/api/index")')
+        xhr.send();
+
+        //步驟三接收伺服器回傳的結果
+        xhr.addEventListener('load', () => {
+            const data = xhr.responseText;
+            //console.log("data", data)
+            //步驟四讀出資料
+            //步驟五顯示資料在網頁上
+            //要找到想要控制的標籤
+            document.querySelector('#div1').innerHTML = `<h3>${data}</h3>`
+        })
+
+    </script>
+}

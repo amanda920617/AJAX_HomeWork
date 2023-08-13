@@ -1,0 +1,309 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\prjDemoAjax.bundle.scp.css",
+      "PackagePath": "staticwebassets\\prjDemoAjax.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\datas\\travel.js",
+      "PackagePath": "staticwebassets\\datas\\travel.js"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\images\\Walk.gif",
+      "PackagePath": "staticwebassets\\images\\Walk.gif"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\uploads\\Walk.gif",
+      "PackagePath": "staticwebassets\\uploads\\Walk.gif"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\uploads\\cat1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\cat1.jpg"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\uploads\\cat2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\cat2.jpg"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\uploads\\dog2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\dog2.jpg"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\uploads\\dog3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\dog3.jpg"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\uploads\\dog5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\dog5.jpg"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\uploads\\supplier.jpg",
+      "PackagePath": "staticwebassets\\uploads\\supplier.jpg"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\uploads\\五條悟.jpg",
+      "PackagePath": "staticwebassets\\uploads\\五條悟.jpg"
+    },
+    {
+      "Id": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\wwwroot\\uploads\\轟焦凍.jpg",
+      "PackagePath": "staticwebassets\\uploads\\轟焦凍.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.prjDemoAjax.props",
+      "PackagePath": "build\\prjDemoAjax.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.prjDemoAjax.props",
+      "PackagePath": "buildMultiTargeting\\prjDemoAjax.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.prjDemoAjax.props",
+      "PackagePath": "buildTransitive\\prjDemoAjax.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.prjDemoAjax.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

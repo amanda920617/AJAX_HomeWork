@@ -1,0 +1,98 @@
+﻿@{
+    ViewData["Title"] = "jQuery";
+}
+
+<h1>jQuery</h1>
+<button id="buttonGet" class="btn btn-primary">get</button>
+<button id="buttonPost" class="btn btn-secondary">post</button>
+<button id="buttonJson" class="btn btn-success">getJson</button>
+<button id="buttonLoad" class="btn btn-info">load</button>
+<button id="buttonAjax" class="btn btn-warning">ajax</button>
+<button id="buttonCors" class="btn btn-danger">cors</button>
+<div class="alert alert-dark mt-3 w-50" role="alert" id="divAlert">
+    <ul>
+    </ul>
+</div>
+
+@section Scripts{
+    <script>
+        $('#buttonGet').click(function () {
+            //jQuery.get(url[, data][, success][, dataType])
+            $.get('@Url.Content("~/api/GetDemo")', { "name": "Mark", "age": 22 }, function (data) {
+                //data 就會收到伺服器端回傳的結果
+                $('#divAlert').text("GET")
+            })
+        })
+        $('#buttonPost').click(function () {
+            //jQuery.post(url[, data][, success][, dataType])
+            $.post('@Url.Content("~/api/GetDemo")', { "name": "Jack", "age": 25 }, function (data) {
+                //data 就會收到伺服器端回傳的結果
+                $('#divAlert').text(data)
+            })
+        })
+        $('#buttonJson').click(function () {
+            //jQuery.getJSON(url[, data][, success])
+            $.getJSON('@Url.Content("~/api/Cities")', function (datas) {
+                ////data 就會收到伺服器端回傳的結果
+                ////$('#divAlert').text(data)
+                //$.each(datas, function (idx, city) {
+                //    console.log(city)
+                //})
+
+                const theUl = $('#divAlert>ul');
+                //建立一個空元素(容器)
+                const docFrag = $(document.createDocumentFragment());
+                $.each(datas, function (idx, city) {
+                    ////$(要被轉型的東西)目的是將標籤轉型為JQuery物件 => 才可以使用提供的方法
+                    //const item = $('<li></li>').text(city)
+                    ////不要在網頁直接增加內容
+                    //docFrag.append(item)
+
+                    //等於上方內容合併
+                    docFrag.append(`<li>${city}</li>`)
+                })
+                //先用容器裝起來再一次放進去
+                theUl.html(docFrag)
+            })
+        })
+        $('#buttonLoad').click(function () {
+            //$('#divAlert').load('@Url.Content("~/home/Partial1")')
+            $('#divAlert').load('@Url.Content("~/home/Partial2")')
+        })
+        $('#buttonAjax').click(function () {
+            //jQuery.ajax(url[, settings])
+            //$.ajax({
+            //    'url': '@Url.Content("~/api/GetDemo")',
+            //    'type':'get', //post(網址不含data參數)
+            //    'data': { "name": "Amanda", "age": 20 }
+            //    ////舊版方法不使用
+            //    //'success':function(data){
+            //    //    $('#divAlert').text(data)
+            //    //}
+            //})
+            //    .done(function (data) {
+            //        $('#divAlert').text(data)
+            //    })
+            $.ajax({
+                'url': '@Url.Content("~/api/Cities")',
+                'type': 'get',
+                'dataType': 'json' //注意大小寫
+            })
+                .done(function (datas) {
+                    const theUl = $('#divAlert>ul');
+                    const docFrag = $(document.createDocumentFragment());
+                    $.each(datas, function (idx, city) {
+                        docFrag.append(`<li>${city}</li>`)
+                    })
+                    theUl.html(docFrag)
+                })
+        })
+        $('#buttonCors').click(function () {
+            $.getJSON('https://localhost:7239/api/Shippers', function(datas){
+                //存取別的server會受限制，需在對方的Program.cs做更動
+                console.log(datas)
+            })
+        })
+
+    </script>
+}
