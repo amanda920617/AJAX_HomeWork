@@ -135,5 +135,15 @@ namespace prjDemoAjax.Controllers
                 return null;
             return File(imgByte, "image/jpeg");
         }
+        public IActionResult AutoComplete(string? keyword)
+        {
+            if (string.IsNullOrEmpty(keyword))
+            {
+                return Json(null);
+            }
+
+            var citys = _context.Address.Where(x => x.City.ToUpper().Contains(keyword.ToUpper())).Select(x => x.City).Distinct();
+            return Json(citys);
+        }
     }
 }

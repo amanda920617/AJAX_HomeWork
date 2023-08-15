@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<table id="empTable" class="table table-bordered table-hover table-striped">
+    <thead>
+        <tr>
+            <th>姓名</th>
+            <th>年資</th>
+            <th>薪水</th>
+        </tr>
+    </thead>
+    <tbody id="data">
+        @*要在下面寫完後插入*@
+    </tbody>
+</table>
+
+@*使用section需要在_Layout.cshtml加上@await RenderSectionAsync("section名稱", required: false)*@
+@section Styles{
+    <style>
+        p {
+            background-color: yellow
+        }
+    </style>
+}
+
+@section Scripts{
+    <script>
+        //物件屬性
+        const emp = {
+            "employees": [
+                { "name": "Tom", "workYears": 3, "salary": 35000 },
+                { "name": "Jack", "workYears": 5, "salary": 40000 },
+                { "name": "Mary", "workYears": 7, "salary": 45000 }
+            ]
+        };
+
+        //使用JQuery
+        $("#data").html(emp.employees.map(employee =>
+            `<tr>
+                                        <td>${employee.name}</td>
+                                        <td>${employee.workYears}</td>
+                                        <td>${employee.salary}</td>
+                            </tr>`
+        ).join(""));
+
+    </script>
+
+
+}
+

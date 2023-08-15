@@ -11277,23 +11277,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Amanda Lin\\.nuget\\packages\\": {},
+    "C:\\Users\\User\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\prjDemoAjax.csproj",
+      "projectUniqueName": "C:\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\prjDemoAjax.csproj",
       "projectName": "prjDemoAjax",
-      "projectPath": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\prjDemoAjax.csproj",
-      "packagesPath": "C:\\Users\\Amanda Lin\\.nuget\\packages\\",
-      "outputPath": "E:\\MSIT150\\AJAX\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\obj\\",
+      "projectPath": "C:\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\prjDemoAjax.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\AJAX_HomeWork\\slnDemoAjax\\prjDemoAjax\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Amanda Lin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

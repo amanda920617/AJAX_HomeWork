@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "City";
+}
+
+<h1>City</h1>
+
+<span id="span1">？？？</span>
+<select class="form-select" id="city"></select>
+
+@section Styles{
+    <style></style>
+}
+@section Scripts{
+    <script>
+        const theSpan = document.querySelector('#span1')
+        const theCity = document.querySelector('#city')
+        const cities = ["台北市", "新北市", "桃園市", "台中市", "台南市", "高雄市"]
+
+        theCity.innerHTML = '<option value="0">請選擇</option>';
+        for (let i = 0; i < cities.length; i++) {
+            theCity.innerHTML += `<option value="${cities[i]}">${cities[i]}</option>`
+        }
+
+        theCity.addEventListener('change', () => {
+            theSpan.innerHTML = theCity.value;
+        })
+    </script>
+}

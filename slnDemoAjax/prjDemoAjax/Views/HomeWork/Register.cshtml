@@ -1,0 +1,109 @@
+﻿@{
+    ViewData["Title"] = "Register";
+}
+
+<h1>Register</h1>
+<div class="row">
+    <div class="col-3"></div>
+
+    <div class="col-6">
+        <form id="form1">
+            <div class="mb-3">
+                <label for="userName" class="form-label">User Name：</label>
+                <input type="text" class="form-control" id="userName" name="Name" placeholder="請輸入姓名">
+                <div id="NameMesssage" class="alert alert-warning"></div>
+            </div>
+            <div class="mb-3">
+                <label for="userEmail" class="form-label">User Email：</label>
+                <input type="email" class="form-control" id="userEmail" name="Email" placeholder="請輸入電子郵件地址">
+            </div>
+            <div class="mb-3">
+                <label for="userAge" class="form-label">User Age：</label>
+                <input type="number" class="form-control" id="userAge" name="Age" placeholder="請輸入年齡">
+            </div>
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Photo：</label>
+                <input class="form-control" type="file" id="formFile" name="file">
+                <br />
+                <img class="w-100" id="previewImg" src="#" />
+            </div>
+            <button id="button1" type="submit" class="btn btn-primary">送出</button>
+        </form>
+        <div class="alert alert-info" id="div1"></div>
+    </div>
+    <div class="col-3">
+        <a href="https://www.ispan.com.tw" id="a1">ispan</a>
+    </div>
+</div>
+
+@section Styles{
+    <style></style>
+}
+
+@section Scripts{
+    <script>
+        const btn = document.querySelector('#button1');
+        const theA = document.querySelector('#a1')
+        const txtName = document.querySelector('#userName')
+        const errorMesssage = document.querySelector('#NameMesssage')
+        const theDiv = document.querySelector('#div1')
+
+        //通常命名為event
+        btn.addEventListener('click', event => {
+            event.preventDefault(); //防止預設行為(action="~/api/getdemo" 之類)的發生
+
+            const xhr = new XMLHttpRequest();
+            xhr.open('post', '@Url.Content("/api/Register")');
+
+            //改用 fetch 傳送FormData到server端
+            const formData = new FormData(document.querySelector('#form1'));
+            fetch('@Url.Content("/api/Register")', {
+                body: formData,
+                method: 'post'
+            })
+                .then(response => {
+                    if (response.ok) {
+                        alert("新增成功")
+                        location.href = '@Url.Content("/members")'
+                    }
+                    else {
+                        alert("有錯誤")
+                    }
+                })
+        })
+
+        theA.addEventListener('click', event => {
+            if (!window.confirm("真的要去嗎0.0？")) {
+                event.preventDefault();
+            }
+        })
+
+        txtName.addEventListener('blur', () => {
+            const xhr = new XMLHttpRequest();
+            xhr.open('post', '@Url.Content("/api/CheckAccount")');
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.send(`name=${txtName.value}`);
+
+            xhr.addEventListener('load', () => {
+                const data = xhr.responseText;
+                errorMesssage.innerHTML = data;
+            })
+        })
+
+        $("#formFile").change(function () {
+            //當檔案改變後，做一些事
+            readURL(this);   // this代表<input id="formFile">
+        });
+
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $("#previewImg").attr('src', e.target.result);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+    </script>
+}

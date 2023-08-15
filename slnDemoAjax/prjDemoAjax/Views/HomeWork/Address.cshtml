@@ -1,0 +1,88 @@
+﻿@{
+    ViewData["Title"] = "Address";
+}
+
+<h1>Address</h1>
+<select id="selectCity"></select>
+<select id="selectDistrict"></select>
+<select id="selectRoad"></select>
+<div id="div1" class="alert alert-info"> </div>
+
+<h3>搜尋縣市：</h3>
+<input type="text" name="txtSearchCity" id="txtSearchCity" />
+<div>
+    <ul class="list-group" id="Match">
+    </ul>
+</div>
+
+
+@section Styles{
+    <style></style>
+}
+
+@section Scripts{
+    <script>
+        const selCity = document.querySelector('#selectCity');
+        const selDistrict = document.querySelector('#selectDistrict');
+        const selRoad = document.querySelector('#selectRoad');
+        const theDiv = document.querySelector('#div1');
+
+        async function loadCity() {
+            const response = await fetch('@Url.Content("/api/Cities")')
+            const datas = await response.json();
+            const cities = datas.map(city => `<option value='${city}'>${city}</option>`);
+            selCity.innerHTML = cities.join("");
+            loadDistrict()
+        }
+        loadCity()
+
+        async function loadDistrict() {
+            const response = await fetch(`@Url.Content("/api/districts")?city=${selCity.value}`)
+            const datas = await response.json();
+            const districts = datas.map(district => `<option value='${district}'>${district}</option>`);
+            selDistrict.innerHTML = districts.join("");
+            loadRoad()
+        }
+
+        async function loadRoad() {
+            const response = await fetch(`@Url.Content("/api/roads")?siteId=${selDistrict.value}`)
+            const datas = await response.json();
+            const roads = datas.map(road => `<option value='${road}'>${road}</option>`);
+            selRoad.innerHTML = roads.join("");
+            show()
+        }
+
+        selCity.addEventListener('change', () => {
+            loadDistrict()
+        })
+
+        selDistrict.addEventListener('change', () => {
+            loadRoad()
+        })
+        selRoad.addEventListener('change', () => {
+            show()
+        })
+
+        function show() {
+            theDiv.textContent = `${selCity.value} - ${selDistrict.value} - ${selRoad.value}`;
+        }
+
+        //AutoComplete
+        const txtSearchCity = document.querySelector('#txtSearchCity');
+
+
+        txtSearchCity.addEventListener('input', () => {
+            SearchKeyword();
+        })
+
+        async function SearchKeyword() {
+            const response = await fetch(`@Url.Content("/api/AutoComplete")?keyword=${txtSearchCity.value}`)
+            const datas = await response.json();
+            if (datas != null) {
+                const citys = datas.map(citys => `<li class="list-group-item" id="test">${citys}</li>`);
+                document.querySelector('#Match').innerHTML = citys.join("");
+            }
+        }
+
+    </script>
+}
